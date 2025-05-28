@@ -55,7 +55,7 @@
       border-radius: 10px;
     }
     .flashcard {
-      background: rgba(15, 32, 50, 0.85);
+      background: rgba(255, 182, 193, 0.85); /* Cor rosa claro para o flashcard */
       width: 280px;
       height: 180px;
       perspective: 1000px;
@@ -91,8 +91,8 @@
       text-align: center;
     }
     .card-front {
-      background: linear-gradient(145deg, #2c144e, #3f1c63);
-      border: 2px solid #88ccff;
+      background: linear-gradient(145deg, #ff85a2, #ff66b2); /* Tom rosa suave */
+      border: 2px solid #ffb3c6;
     }
     .card-front h2 {
       font-family: 'Orbitron', sans-serif;
@@ -100,13 +100,13 @@
       font-size: 1.4rem;
       margin-bottom: 10px;
       letter-spacing: 1.2px;
-      color: #88ccff;
+      color: #ffb3c6;
     }
     .card-back {
-      background: linear-gradient(145deg, #0a3d28, #1bc25b);
-      border: 2px solid #6fe68a;
+      background: linear-gradient(145deg, #f4c4c4, #ffb3d9); /* Tom rosa mais claro */
+      border: 2px solid #ff7fb2;
       transform: rotateY(180deg);
-      color: #e0ffe0;
+      color: #f2f2f2;
     }
     .card-back h3 {
       font-family: 'Orbitron', sans-serif;
@@ -114,7 +114,7 @@
       font-size: 1.2rem;
       margin-bottom: 10px;
       letter-spacing: 1.1px;
-      color: #6fe68a;
+      color: #ff7fb2;
     }
     .question-text, .answer-text {
       font-weight: 600;
@@ -130,14 +130,14 @@
 
   <script>
     const flashcardsData = [
-      { topic: 'Matemática', question: 'Qual é a raiz quadrada de 144?', answer: '12' },
-      { topic: 'História', question: 'Quem foi o primeiro presidente do Brasil?', answer: 'Deodoro da Fonseca' },
-      { topic: 'Inglês', question: 'Traduza "I am learning English."', answer: 'Eu estou aprendendo inglês.' },
-      { topic: 'Geografia', question: 'Qual é o maior país do mundo em território?', answer: 'Rússia' },
-      { topic: 'Ciência', question: 'O que é H2O?', answer: 'Água' },
-      { topic: 'Literatura', question: 'Quem escreveu "O Pequeno Príncipe"?', answer: 'Antoine de Saint-Exupéry' },
-      { topic: 'Tecnologia', question: 'O que significa "CPU"?', answer: 'Unidade Central de Processamento' },
-      { topic: 'Física', question: 'Qual a fórmula da velocidade média?', answer: 'Vm = ΔS / Δt' },
+      { topic: 'Matemática', question: 'Quanto é 45 dividido por 5?', answer: '9' },
+      { topic: 'História', question: 'Em que ano foi proclamada a República no Brasil?', answer: '1889' },
+      { topic: 'Inglês', question: 'Como se diz "Eu tenho 20 anos" em inglês?', answer: 'I am 20 years old.' },
+      { topic: 'Geografia', question: 'Qual é o maior oceano do mundo?', answer: 'Oceano Pacífico' },
+      { topic: 'Ciência', question: 'Qual é a fórmula da água?', answer: 'H2O' },
+      { topic: 'Literatura', question: 'Quem escreveu "1984"?', answer: 'George Orwell' },
+      { topic: 'Tecnologia', question: 'O que significa "Wi-Fi"?', answer: 'Wireless Fidelity' },
+      { topic: 'Física', question: 'Qual é a unidade de medida da força no SI?', answer: 'Newton (N)' },
     ];
 
     const container = document.getElementById("flashcards-container");
