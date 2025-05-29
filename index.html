@@ -13,7 +13,7 @@
     }
     body {
       font-family: 'Rajdhani', sans-serif;
-      background-color: #ff69b4; /* Cor de fundo rosa */
+      background-color: #ff69b4;
       color: #e0e0e0;
       min-height: 100vh;
       padding: 40px 20px;
@@ -28,8 +28,8 @@
       font-weight: 700;
       font-size: 3rem;
       margin-bottom: 40px;
-      color: #ffb3d9; /* Rosa claro para o título */
-      text-shadow: 0 0 10px #ffb3d9, 0 0 20px #ffb3d9; /* Efeito suave de brilho rosa claro */
+      color: #ffb3d9;
+      text-shadow: 0 0 10px #ffb3d9, 0 0 20px #ffb3d9;
     }
     .container {
       display: flex;
@@ -55,7 +55,7 @@
       border-radius: 10px;
     }
     .flashcard {
-      background: rgba(255, 182, 193, 0.85); /* Cor rosa claro para o flashcard */
+      background: rgba(255, 182, 193, 0.85);
       width: 280px;
       height: 180px;
       perspective: 1000px;
@@ -91,7 +91,7 @@
       text-align: center;
     }
     .card-front {
-      background: linear-gradient(145deg, #ff85a2, #ff66b2); /* Tom rosa suave */
+      background: linear-gradient(145deg, #ff85a2, #ff66b2);
       border: 2px solid #ffb3c6;
     }
     .card-front h2 {
@@ -100,10 +100,10 @@
       font-size: 1.4rem;
       margin-bottom: 10px;
       letter-spacing: 1.2px;
-      color: #ffb3c6;
+      color: white; /* <-- Título dos cards agora branco */
     }
     .card-back {
-      background: linear-gradient(145deg, #f4c4c4, #ffb3d9); /* Tom rosa mais claro */
+      background: linear-gradient(145deg, #f4c4c4, #ffb3d9);
       border: 2px solid #ff7fb2;
       transform: rotateY(180deg);
       color: #f2f2f2;
@@ -125,14 +125,14 @@
   </style>
 </head>
 <body>
-  <h1>Flash Cards para Estudo ✨</h1> <!-- Título com rosa claro e emoji -->
+  <h1>Flash Cards para Estudo ✨</h1>
   <div class="container" id="flashcards-container"></div>
 
   <script>
     const flashcardsData = [
       { topic: '📐 Matemática', question: 'Qual é a solução da equação \( 2x + 3 = 15 \)?', answer: 'x = 6' },
       { topic: '📜 História', question: 'Em que ano foi proclamada a República no Brasil?', answer: '1889' },
-      { topic: '🇬🇧 Inglês', question: 'Qual a diferença entre "present perfect" e "past simple" em inglês?', answer: 'O "present perfect" é usado para ações que têm relevância no presente ou ocorreram em um período não específico, enquanto o "past simple" descreve ações concluídas em um momento específico no passado.' },
+      { topic: '🇬🇧 Inglês 🗣️', question: 'Qual a diferença entre "present perfect" e "past simple" em inglês?', answer: 'O "present perfect" é usado para ações que têm relevância no presente ou ocorreram em um período não específico, enquanto o "past simple" descreve ações concluídas em um momento específico no passado.' },
       { topic: '🌍 Geografia', question: 'Qual é o maior oceano do mundo?', answer: 'Oceano Pacífico' },
       { topic: '🔬 Ciência', question: 'Qual é a fórmula da água?', answer: 'H2O' },
       { topic: '📚 Literatura', question: 'Quem escreveu "1984"?', answer: 'George Orwell' },
